@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="{{url_for('static',filename='style/index2.css')}}">
+    <title>Crop Recommandation | Home</title>
+  </head>
+  <body>
+    <section class="container">
+      <nav>
+        <div class="nav__bar">
+          <a href="#" class="nav__logo">
+           
+            <span></span>
+          </a>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-3-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="container__grid">
+        
+        <div class="container__image">
+          <div></div>
+        </div>
+        <div class="container__content">
+          <h1>Crop Recommandation System</h1>
+          <h2>Harmony with Nature, Harvesting Prosperity.</h2>
+          <p>
+            Discover the best crops for your soil. Grow with confidence using our personalized recommendations.
+            <form action="/Predict">
+              <input type="submit" class="button2" id="Predict" name="Predict" action="/Predict" value="Predict">
+             </form>
+          </p>
+          
+        </div>
+      </div>
+      </section>
+  </body>
+</html>
