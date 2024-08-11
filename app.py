@@ -27,7 +27,6 @@ def brain():
         model = joblib.load(open('crop_app','rb'))
         arr = [values]
         acc = model.predict(arr)
-        # print(acc)
         return render_template('prediction.html', prediction=str(acc))
     else:
         return "Sorry...  Error in entered values in the form Please check the values and fill it again"
